@@ -1,19 +1,19 @@
 /*
 
 		Uyuşturucu Üretme/Satma Sistemi trf. manhunt
-				  25.04.2020, 20:21
+			   25.04.2020, 20:21
 
 */
 
 #include <a_samp>
-#include <zcmd> 							// https://forum.sa-mp.com/showthread.php?t=91354
-#include <streamer>							// https://forum.sa-mp.com/showthread.php?t=102865
+#include <zcmd> 					// https://forum.sa-mp.com/showthread.php?t=91354
+#include <streamer>					// https://forum.sa-mp.com/showthread.php?t=102865
 
 #define VEHICLE_CAPACITY			(3) 	// 422. satıra bakın
 #define VEHICLE_MODEL 				(482) 	// https://wiki.sa-mp.com/wiki/Vehicle_Model_ID_List
 #define MAP_ICON_MODEL				(17)	// https://wiki.sa-mp.com/wiki/MapIcons
 #define PICKUP_MODEL				(1279)	// https://wiki.sa-mp.com/wiki/Pickup_IDs
-#define SKIN_MODEL					(70)	// https://wiki.sa-mp.com/wiki/Skins:All
+#define SKIN_MODEL				(70)	// https://wiki.sa-mp.com/wiki/Skins:All
 
 enum E_METH
 {
@@ -39,7 +39,7 @@ public OnFilterScriptInit()
 	MethData[Label][5] = CreateDynamic3DTextLabel("{44bd32}Lavoratuvar Kıyafeti\n{ffffff}/giyin", -1, 757.1643,-1115.0687,-43.2600, 15.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, -1, -1, -1, STREAMER_3D_TEXT_LABEL_SD, -1, 0);
 
 	// https://forum.sa-mp.com/showthread.php?t=653780
-    CreateDynamicObject(19907, 763.85, -1107.11, -44.41, 0.00, 0.00, 0.00);
+	CreateDynamicObject(19907, 763.85, -1107.11, -44.41, 0.00, 0.00, 0.00);
 	CreateDynamicObject(19908, 755.16, -1100.17, -41.82, 0.00, 0.00, 0.00);
 	CreateDynamicObject(19908, 755.16, -1105.55, -41.82, 0.00, 0.00, 0.00);
 	CreateDynamicObject(19355, 770.71, -1122.94, -42.51, 0.00, 0.00, 0.00);
